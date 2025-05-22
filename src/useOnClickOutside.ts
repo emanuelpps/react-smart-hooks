@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export function useOnClickOutside(
   // eslint-disable-next-line no-undef
-  ref: React.RefObject<HTMLElement>,
+  ref: React.RefObject<HTMLElement | null>,
   handler: () => void
 ) {
   useEffect(() => {
