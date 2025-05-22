@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1747943860912" clover="3.2.0">
-  <project timestamp="1747943860913" name="All files">
-    <metrics statements="71" coveredstatements="57" conditionals="21" coveredconditionals="18" methods="8" coveredmethods="6" elements="100" coveredelements="81" complexity="0" loc="71" ncloc="71" packages="1" files="6" classes="6"/>
+<coverage generated="1747944080839" clover="3.2.0">
+  <project timestamp="1747944080840" name="All files">
+    <metrics statements="70" coveredstatements="65" conditionals="23" coveredconditionals="21" methods="8" coveredmethods="7" elements="101" coveredelements="93" complexity="0" loc="70" ncloc="70" packages="1" files="6" classes="6"/>
     <file name="index.ts" path="C:\Users\emanu\OneDrive\Escritorio\Proyectos Javascript\react-libraries\react-smart-hooks\src\index.ts">
       <metrics statements="5" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -80,16 +80,15 @@
       <line num="19" count="3" type="stmt"/>
     </file>
     <file name="useToggle.ts" path="C:\Users\emanu\OneDrive\Escritorio\Proyectos Javascript\react-libraries\react-smart-hooks\src\useToggle.ts">
-      <metrics statements="9" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-      <line num="2" count="0" type="stmt"/>
-      <line num="3" count="0" type="stmt"/>
-      <line num="4" count="0" type="stmt"/>
-      <line num="5" count="0" type="stmt"/>
-      <line num="6" count="0" type="stmt"/>
-      <line num="7" count="0" type="stmt"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="9" count="0" type="stmt"/>
+      <metrics statements="8" coveredstatements="8" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+      <line num="4" count="6" type="stmt"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="6" count="6" type="stmt"/>
+      <line num="7" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="8" count="6" type="stmt"/>
+      <line num="9" count="6" type="stmt"/>
     </file>
   </project>
 </coverage>
