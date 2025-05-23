@@ -25,11 +25,11 @@ A lightweight collection of **TypeScript-first custom React hooks** – built fo
 ## 📦 Installation
 
 ```bash
-npm install @react-smart-hooks
+npm install smart-hooks
 # or
-yarn add @react-smart-hooks
+yarn add smart-hooks
 # or
-pnpm add @react-smart-hooks
+pnpm add smart-hooks
 ```
 
 ---
