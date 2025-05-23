@@ -1,54 +1,131 @@
-# React + TypeScript + Vite
+# ⚛️ react-smart-hooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight collection of **TypeScript-first custom React hooks** – built for speed, strict typing, and real-world use cases. No external dependencies. Perfect for modern React apps.
 
-Currently, two official plugins are available:
+> Build faster with reusable, tested hooks for React developers.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ **Built for React** – Designed exclusively for React projects.
+- 🛡️ **TypeScript First** – Strict typing and excellent developer experience.
+- 🧪 **Tested** – 100% test coverage using [Vitest](https://vitest.dev/).
+- 📦 **Lightweight** – Zero dependencies, fully tree-shakable.
+- 🔌 **Reusable** – Plug-and-play for any React component.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📦 Installation
+
+```bash
+npm install @react-smart-hooks
+# or
+yarn add @react-smart-hooks
+# or
+pnpm add @react-smart-hooks
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧠 Available Hooks
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 🔁 `useDebounce`
+
+```tsx
+const debouncedValue = useDebounce(value, delay);
 ```
+
+Delays value changes until a pause in user input – ideal for search fields or autosave logic.
+
+---
+
+### 💾 `useLocalStorage`
+
+```tsx
+const [storedValue, setStoredValue] = useLocalStorage('key', defaultValue);
+```
+
+Persist state in `localStorage`, fully reactive.
+
+---
+
+### 🔀 `useToggle`
+
+```tsx
+const [value, toggle] = useToggle(initialValue);
+```
+
+A simple boolean toggle, perfect for modals, dropdowns, and more.
+
+---
+
+### 🔎 `useIsMounted`
+
+```tsx
+const isMounted = useIsMounted();
+```
+
+Prevent updates on unmounted components – great for safe async effects.
+
+---
+
+### 🖱️ `useOnClickOutside`
+
+```tsx
+useOnClickOutside(ref, handler);
+```
+
+Detect clicks outside a ref – useful for closing dropdowns, modals, etc.
+
+---
+
+## 💡 Example Usage
+
+```tsx
+import { useDebounce, useToggle } from '@your-scope/react-hooks-utils';
+
+function SearchBox() {
+  const [query, setQuery] = useState('');
+  const debouncedQuery = useDebounce(query, 300);
+  const [isOpen, toggleOpen] = useToggle(false);
+
+  return (
+    <div>
+      <input value={query} onChange={(e) => setQuery(e.target.value)} />
+      <p>Debounced: {debouncedQuery}</p>
+      <button onClick={toggleOpen}>
+        {isOpen ? 'Close' : 'Open'}
+      </button>
+    </div>
+  );
+}
+```
+
+---
+
+## 🔍 Why Use This Library?
+
+- ✅ Save time with ready-to-use React logic
+- ✅ Works with React 18+
+- ✅ No external dependencies
+- ✅ Tree-shakable and lightweight
+- ✅ Fully typed and tested
+
+---
+
+## 📄 License
+
+MIT
+
+---
+
+## 🔎 Keywords (npm & SEO)
+
+`react`, `react hooks`, `custom hooks`, `typescript`, `useDebounce`, `useToggle`, `useLocalStorage`, `useOnClickOutside`, `react utils`, `typed hooks`, `react 18`, `vitest`, `frontend utils`, `minimal react hooks`, `zero dependency`
+
+---
+
+## 👤 Author
+
+**Emanuel Pagés** – [emanuelpps](https://github.com/emanuelpps)
