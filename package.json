@@ -1,5 +1,5 @@
 {
-  "name": "react-smart-hooks",
+  "name": "smart-hooks",
   "version": "1.0.1",
   "description": "A collection of lightweight, TypeScript-first, production-ready React hooks for modern web apps.",
   "type": "module",
