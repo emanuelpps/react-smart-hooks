@@ -83,7 +83,7 @@ Detect clicks outside a ref – useful for closing dropdowns, modals, etc.
 ## 💡 Example Usage
 
 ```tsx
-import { useDebounce, useToggle } from '@your-scope/react-hooks-utils';
+import { useDebounce, useToggle } from 'react-smart-hooks';
 
 function SearchBox() {
   const [query, setQuery] = useState('');
