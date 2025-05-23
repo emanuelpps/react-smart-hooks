@@ -1,5 +1,5 @@
 <p>
-  <img src="https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/c1mhg44uvuzyidlxynyu" alt="React Smart Hooks banner" />
+  <img src="https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/c1mhg44uvuzyidlxynyu" alt="React Smart Hooks banner" width: 200/>
 </p>
 
 ## ✨ Features
