@@ -1,10 +1,6 @@
-# ⚛️ react-smart-hooks
-
-A lightweight collection of **TypeScript-first custom React hooks** – built for speed, strict typing, and real-world use cases. No external dependencies. Perfect for modern React apps.
-
-> Build faster with reusable, tested hooks for React developers.
-
----
+<p>
+  <img src="https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/c1mhg44uvuzyidlxynyu" alt="React Smart Hooks banner" />
+</p>
 
 ## ✨ Features
 
@@ -43,7 +39,7 @@ Delays value changes until a pause in user input – ideal for search fields or 
 ### 💾 `useLocalStorage`
 
 ```tsx
-const [storedValue, setStoredValue] = useLocalStorage('key', defaultValue);
+const [storedValue, setStoredValue] = useLocalStorage("key", defaultValue);
 ```
 
 Persist state in `localStorage`, fully reactive.
@@ -83,10 +79,10 @@ Detect clicks outside a ref – useful for closing dropdowns, modals, etc.
 ## 💡 Example Usage
 
 ```tsx
-import { useDebounce, useToggle } from 'react-smart-hooks';
+import { useDebounce, useToggle } from "react-smart-hooks";
 
 function SearchBox() {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 300);
   const [isOpen, toggleOpen] = useToggle(false);
 
@@ -94,9 +90,7 @@ function SearchBox() {
     <div>
       <input value={query} onChange={(e) => setQuery(e.target.value)} />
       <p>Debounced: {debouncedQuery}</p>
-      <button onClick={toggleOpen}>
-        {isOpen ? 'Close' : 'Open'}
-      </button>
+      <button onClick={toggleOpen}>{isOpen ? "Close" : "Open"}</button>
     </div>
   );
 }
