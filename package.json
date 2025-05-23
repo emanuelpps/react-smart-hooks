@@ -1,7 +1,10 @@
 {
   "name": "react-smart-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "A collection of lightweight, TypeScript-first, production-ready React hooks for modern web apps.",
   "type": "module",
+  "main": "./dist/react-smart-hooks.umd.cjs",
+  "module": "./dist/react-smart-hooks.js",
   "exports": {
     ".": {
       "import": "./dist/react-smart-hooks.js",
@@ -11,9 +14,33 @@
   "files": [
     "dist"
   ],
+  "sideEffects": false,
   "publishConfig": {
-    "registry": "htts://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
+  "keywords": [
+    "react",
+    "react hooks",
+    "custom hooks",
+    "typescript",
+    "useDebounce",
+    "useToggle",
+    "useLocalStorage",
+    "react utilities",
+    "react-smart-hooks",
+    "frontend",
+    "web development",
+    "vite",
+    "react custom hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/react-smart-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/react-smart-hooks/issues"
+  },
+  "homepage": "https://github.com/your-username/react-smart-hooks#readme",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
